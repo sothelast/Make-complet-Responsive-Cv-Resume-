@@ -1,0 +1,251 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    height: auto;
+}
+
+.hed_profile {
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+    border: 3px solid black;
+    border-bottom: none;
+    background-color: rgb(63, 63, 235);
+}
+
+.profile_container {
+    width: 100%;
+    height: 100%;
+    border-left: 4px solid blue;
+    overflow: hidden;
+}
+
+.profile_name_sectin {
+    width: 75%;
+    height: 100%;
+    border: 4px solid blue;
+    background-color: rgb(161, 235, 245);
+    transform: skewX(45deg);
+    margin-left: -230px;
+    padding-left: 27%;
+}
+
+.porfile_photo_div {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    left: 20%;
+    top: 10%;
+    border: 4px solid blue;
+    background-color: rgb(161, 235, 245);
+}
+
+.porfile_photo_div::before {
+    position: absolute;
+    content: "";
+    right: -150px;
+    bottom: -8px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid blue;
+    background: url("12.jpg") center;
+    background-size: contain;
+}
+
+.profle_text {
+    transform: skewX(-45deg);
+    margin-top: 70px;
+}
+
+.name {
+    font-size: 45px;
+    font-weight: bold;
+    font-style: normal;
+    color: red;
+}
+
+#so {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.para {
+    font-size: 20px;
+}
+
+
+/* second section css start */
+
+.second_section_cont {
+    width: 100%;
+    height: auto;
+    background-color: rgb(63, 63, 235);
+    display: flex;
+    padding: 0px 15px 30px 15px;
+    border: 3px solid black;
+    border-top: none;
+}
+
+.child {
+    height: auto;
+    /* border: 1px solid green; */
+}
+
+.child.a {
+    width: 60%;
+}
+
+.child.b {
+    width: 40%;
+}
+
+
+/* left part scc */
+
+.left_exprience {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.hed {
+    font-size: 40px;
+    color: rgb(231, 32, 171);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.litlehed {
+    font-size: 27px;
+    color: rgb(15, 15, 204);
+}
+
+.left_Education,
+.left_skill {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    background-color: white;
+}
+
+.para.a {
+    font-size: 24px;
+}
+
+progress {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: rgb(219, 219, 248);
+    border-radius: 20px;
+}
+
+progress::-webkit-progress-value {
+    background-image: -webkit-linear-gradient(45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0, 0, 0, .1) 66%, transparent 66%), -webkit-linear-gradient(top, rgba(225, 225, 225, .25), rgba(0, 0, 0, .25)), -webkit-linear-gradient(left, rgb(42, 107, 228), rgb(25, 216, 159));
+    border-radius: 2px;
+    background-size: 33px 20px, 100% 100%, 100% 100%;
+}
+
+.value {
+    font-size: 22px;
+}
+
+.right {
+    padding: 26px 10px;
+    background-color: rgba(2, 2, 22, .6);
+}
+
+.hed.c {
+    font-size: 40px;
+    color: rgb(67, 252, 11);
+    letter-spacing: 1.5px;
+}
+
+#tex {
+    font-size: 27px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    color: white;
+}
+
+@media(max-width:1400px) {
+    .container {
+        width: 100%;
+    }
+    .porfile_photo_div {
+        width: 60%;
+    }
+}
+
+@media(max-width:900px) {
+    .container {
+        width: 100%;
+    }
+    .hed_profile {
+        height: 100vh;
+        padding: 0px 10px 0px 10px;
+    }
+    .profile_name_sectin {
+        width: 100%;
+        height: 80%;
+        transform: skew(0, -20deg);
+        margin-left: 0px;
+        margin-top: -45%;
+        padding-left: 0px;
+        padding-top: 40%;
+    }
+    .profle_text {
+        transform: skew(0, 20deg);
+        margin-top: 70px;
+        margin-left: 13px;
+    }
+    .name {
+        font-size: 30px;
+    }
+    .para {
+        font-size: 17px;
+    }
+    .porfile_photo_div {
+        width: 250px;
+        height: 50%;
+        top: 30%;
+        left: 20%;
+    }
+    .porfile_photo_div::before {
+        height: 250px;
+        width: 250px;
+        bottom: -125px;
+        left: -8px;
+    }
+    .second_section_cont {
+        display: block;
+    }
+    .child.a,
+    .child.b {
+        width: 100%;
+    }
+    progress {
+        width: 180px;
+    }
+    .profile_container {
+        border: none;
+    }
+    .value {
+        display: none;
+    }
+}
