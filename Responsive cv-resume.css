@@ -250,5 +250,6 @@ progress::-webkit-progress-value {
     }
     .shot{
         font-size:19px;
+        color:white;
     }
 }
