@@ -248,4 +248,7 @@ progress::-webkit-progress-value {
     .value {
         display: none;
     }
+    .shot{
+        font-size:19px;
+    }
 }
