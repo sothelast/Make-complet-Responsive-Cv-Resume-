@@ -205,7 +205,7 @@ progress::-webkit-progress-value {
         height: 80%;
         transform: skew(0, -20deg);
         margin-left: 0px;
-        margin-top: -45%;
+        margin-top: -52%;
         padding-left: 0px;
         padding-top: 40%;
     }
@@ -240,7 +240,7 @@ progress::-webkit-progress-value {
         width: 100%;
     }
     progress {
-        width: 180px;
+        width: 130px;
     }
     .profile_container {
         border: none;
